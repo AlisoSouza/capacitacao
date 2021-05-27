@@ -118,7 +118,7 @@ container users {
 ```
 ## Parte 4
 A parte quatro adiciona os autores. Nesse exemplo foi decidido que todos os autores serão referenciados pelo nome completo, e não usarão IDs ou números. Cada autor deve ter um número de conta para pagamentos. A palavra-chave `max` em `range` significa o maior número possível que este tipo pode representar.
-```
+```yang
 container authors {
   list author {
     key name;
@@ -156,7 +156,7 @@ module: bookzone-example
 
 ## Parte 5
 `leafref` aponta para uma coluna em uma YANG list, e qualquer valor que existe na coluna é válido. 
-```
+```yang
 leaf author {
   type leafref {
     path /authors/author/name;
@@ -264,7 +264,7 @@ Por exemplo, em _language_, Moroccan-Arabic é uma variante de Arabic, mas na en
 
 Este conceito de alguns valores de enumeração pertencentes é comum em redes e no mundo em geral. Pense em quantos tipos de interface existem e quantas variantes de Ethernet existem agora, de 10-Base-T a 1000GE. Em YANG, essas enumerações com relações de tipo são modeladas usando a palavra-chave `identity`. Se você estiver familiarizado com os princípios de design orientado a objetos, isso é conhecido como subclasse nesse contexto.
 Abaixo estão listados os formatos escolhidos.
-```
+```yang
 identity format-idty {
   description 'Root identity for all book formats';
 }
@@ -315,7 +315,7 @@ Ao especificar o tipo identityref base  _format-idty_, todos os formatos de livr
 
 #### Yang Module completo:
 [Github](https://github.com/janlindblad/bookzone/blob/master/2-config/bookzone-example.yang)
-```
+```yang
   description 'Physical book printed on paper';
   }
   identity audio-cd {
@@ -554,7 +554,7 @@ notification shipping {
 ```
 
 Antes de publicar um modelo, é interessante adicionar uma `revision` 
-```
+```yang
 revision 2018-01-03 {
   description
     'Added action purchase and notification shipping.';
