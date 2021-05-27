@@ -37,9 +37,12 @@ Finalmente, o [pyang](https://github.com/mbj4668/pyang), é uma ferramenta bem �
 ## Validação do YANG model
 `pyang ietf-interfaces.yang`
 Se o model não conter erros o terminal não apresentará um output. Caso contrário haverá um output informando erro.
+
 Exemplo: 
+
 Em `typedef interface-ref` apague o `path` e rode o comando novamente, um output informando o erro aparecerá:
-nesse caso o output será: `ietf-interfaces.yang:55: error: a type leafref must have a path statement`
+nesse caso o output será: 
+`ietf-interfaces.yang:55: error: a type leafref must have a path statement`
 ## Visualização em formato árvore
 O pyang pode gerar uma representação do YANG model muito mais fácil de entender utilizando o comando:
 	`pyang -f tree ietf-interfaces.yang`
