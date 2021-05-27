@@ -31,7 +31,7 @@ Os modelos YANG tem a habilidade de ser **augmented**(aumentados) ou **deviated 
 [Exemplo na prática]()
 
 # PYANG
-Finalmente, o [pyang](https://github.com/mbj4668/pyang), é uma ferramenta bem útil capaz de validar, converter um YANG model. e gerador de código escrito em python.
+Finalmente, o [pyang](https://github.com/mbj4668/pyang), é uma ferramenta bem útil capaz de validar e converter um YANG model.
 
 [arquivo yang utilizado no exemplo](https://github.com/YangModels/yang/blob/master/vendor/cisco/xe/16111/ietf-interfaces.yang)
 ## Validação do YANG model
