@@ -3,7 +3,7 @@
 ### YANG
 - #### [Modelagem de dados com YANG](https://github.com/AlisoSouza/capacitacao/blob/docs/YANG/yang-data-modeling.md)
 - #### Libraries 
-  - ###### [PYANG](#)
+  - ###### [PYANG](https://github.com/AlisoSouza/capacitacao/blob/docs/YANG/PYANG.md)
   - ###### [YANGSUIT](#)
 #### NETCONF
 - #### Libraries 
